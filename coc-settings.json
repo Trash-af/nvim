@@ -1,0 +1,33 @@
+{
+	"coc.preferences.formatOnSaveFiletypes": [
+		"css",
+		"markdown",
+		"javascript",
+		"graphql",
+		"html",
+		"yaml",
+		"json",
+		"python"
+	],
+	// python config
+	"python.linting.enabled": true,
+	"python.linting.pylintEnabled": true,
+	"languageserver": {
+		"clangd": {
+			"command": "clangd",
+			"filetypes": [
+				"c",
+				"cpp",
+				"cuda",
+				"h",
+				"hpp"
+			],
+			"rootPatterns": [
+				"compile_flags.txt"
+			]
+		}
+	},
+	"diagnostic.errorSign": "",
+	"diagnostic.warningSign": "",
+	"diagnostic.infoSign": ""
+}
