@@ -132,8 +132,8 @@ imap <PageUp><PageUp> <esc><Plug>(easymotion-overwin-w)
 imap <PageUp> <esc><Plug>(easymotion-overwin-f)
 
 "compile -O2 flag
-nnoremap <F8> :w!<cr>:!g++ -std=c++17 -Wshadow -Wall -o %:r % -O2 -Wno-unused-variable -DLOCAL<cr>
-inoremap <F8> <esc>:w!<cr>:!g++ -std=c++17 -Wshadow -Wall -o %:r % -O2 -Wno-unused-variable -DLOCAL<cr>
+nnoremap <PageUp><cr> :w!<cr>:!g++ -std=c++17 -Wshadow -Wall -o %:r % -O2 -Wno-unused-variable -DLOCAL<cr>
+inoremap <PageUp><cr> <esc>:w!<cr>:!g++ -std=c++17 -Wshadow -Wall -o %:r % -O2 -Wno-unused-variable -DLOCAL<cr>
 "run code
 nnoremap <F9> :!./%:r<CR>
 
@@ -178,3 +178,5 @@ nnoremap <Leader>O O<Esc>^Da
 
 "Ranger Toggle
 nmap <Leader>r :RnvimrToggle<CR>
+
+

@@ -13,18 +13,27 @@
 	"python.linting.enabled": true,
 	"python.linting.pylintEnabled": true,
 	"languageserver": {
-		"clangd": {
-			"command": "clangd",
+		"ccls": {
+			"command": "ccls",
 			"filetypes": [
 				"c",
+				"cc",
 				"cpp",
-				"cuda",
-				"h",
-				"hpp"
+				"c++",
+				"objc",
+				"objcpp"
 			],
 			"rootPatterns": [
-				"compile_flags.txt"
-			]
+				".ccls",
+				"compile_commands.json",
+				".git/",
+				".hg/"
+			],
+			"initializationOptions": {
+				"cache": {
+					"directory": "/tmp/ccls"
+				}
+			}
 		}
 	},
 	"diagnostic.errorSign": "",
